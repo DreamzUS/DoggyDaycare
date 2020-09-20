@@ -1,0 +1,18 @@
+OwnerID = int(input('What is the Owners ID Number? '))
+DogName = (input('What is the dogs name? '))
+DogBreed = (input('What is the dogs breed? '))
+DogWeight = float(input('What is the dogs weight? '))
+
+if DogWeight in range(0, 14):
+    DaycareFee = 55
+elif DogWeight in range(15, 30):
+    DaycareFee = 75
+elif DogWeight in range(31, 80):
+    DaycareFee = 105
+elif DogWeight >= 80:
+    DaycareFee = 125
+
+print('The Owners ID Number is ' + str(OwnerID))
+print('The Dogs name is ' + str(DogName))
+print(str(DogName) + 's breed is ' + str(DogBreed))
+print(str(DogName) + 'weighs' + str(DogWeight) + 'which means the daycare fee is ' + str(DaycareFee))
